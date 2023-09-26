@@ -1,0 +1,135 @@
+[
+      {
+        "id": 1,
+        "picture": "https://i.ibb.co/xgzcv5W/Health.png",
+        "category": "Health",
+        "category_bg_color": "#0052ff33",
+        "card_bg_color": "#0052ff26",
+        "text_color": "#0052FF",
+        "button_bg_color": "#0052FF",
+        "description": "Clean water for children",
+        "price": 290.00
+      },
+      {
+        "id": 2,
+        "picture": "https://i.ibb.co/BGb4WD8/Education.png",
+        "category": "Education",
+        "category_bg_color": "#ff444a33",
+        "card_bg_color": "#ff444a26",
+        "text_color": "#FF444A",
+        "button_bg_color": "#FF444A",
+        "description": "Good education",
+        "price": 290.00
+      },
+      {
+        "id": 3,
+        "picture": "https://i.ibb.co/0ySgPPn/Clothing.png",
+        "category": "Clothing",
+        "category_bg_color": "##79c23f33",
+        "card_bg_color": "#79c23f26",
+        "text_color": "#79C23F",
+        "button_bg_color": "#79C23F",
+        "description": "Used Clothing Drive",
+        "price": 290.00
+      },
+      {
+        "id": 4,
+        "picture": "https://i.ibb.co/dWzjpVW/Food.png",
+        "category": "Food",
+        "category_bg_color": "#f8714733",
+        "card_bg_color": "#f8714726",
+        "text_color": "#F87147",
+        "button_bg_color": "#F87147",
+        "description": "Better Food for Everyone",
+        "price": 290.00
+      },
+      {
+        "id": 4,
+        "picture": "https://i.ibb.co/dWzjpVW/Food.png",
+        "category": "Food",
+        "category_bg_color": "#f8714733",
+        "card_bg_color": "#f8714726",
+        "text_color": "#F87147",
+        "button_bg_color": "#F87147",
+        "description": "Better Food for Everyone",
+        "price": 290.00
+      },
+      {
+        "id": 3,
+        "picture": "https://i.ibb.co/0ySgPPn/Clothing.png",
+        "category": "Clothing",
+        "category_bg_color": "##79c23f33",
+        "card_bg_color": "#79c23f26",
+        "text_color": "#79C23F",
+        "button_bg_color": "#79C23F",
+        "description": "Used Clothing Drive",
+        "price": 290.00
+      },
+      {
+        "id": 2,
+        "picture": "https://i.ibb.co/BGb4WD8/Education.png",
+        "category": "Education",
+        "category_bg_color": "#ff444a33",
+        "card_bg_color": "#ff444a26",
+        "text_color": "#FF444A",
+        "button_bg_color": "#FF444A",
+        "description": "Good education",
+        "price": 290.00
+      },
+      {
+        "id": 1,
+        "picture": "https://i.ibb.co/xgzcv5W/Health.png",
+        "category": "Health",
+        "category_bg_color": "#0052ff33",
+        "card_bg_color": "#0052ff26",
+        "text_color": "#0052FF",
+        "button_bg_color": "#0052FF",
+        "description": "Clean water for children",
+        "price": 290.00
+      },
+      {
+        "id": 1,
+        "picture": "https://i.ibb.co/xgzcv5W/Health.png",
+        "category": "Health",
+        "category_bg_color": "#0052ff33",
+        "card_bg_color": "#0052ff26",
+        "text_color": "#0052FF",
+        "button_bg_color": "#0052FF",
+        "description": "Clean water for children",
+        "price": 290.00
+      },
+      {
+        "id": 2,
+        "picture": "https://i.ibb.co/BGb4WD8/Education.png",
+        "category": "Education",
+        "category_bg_color": "#ff444a33",
+        "card_bg_color": "#ff444a26",
+        "text_color": "#FF444A",
+        "button_bg_color": "#FF444A",
+        "description": "Good education",
+        "price": 290.00
+      },
+      {
+        "id": 3,
+        "picture": "https://i.ibb.co/0ySgPPn/Clothing.png",
+        "category": "Clothing",
+        "category_bg_color": "##79c23f33",
+        "card_bg_color": "#79c23f26",
+        "text_color": "#79C23F",
+        "button_bg_color": "#79C23F",
+        "description": "Used Clothing Drive",
+        "price": 290.00
+      },
+      {
+        "id": 4,
+        "picture": "https://i.ibb.co/dWzjpVW/Food.png",
+        "category": "Food",
+        "category_bg_color": "#f8714733",
+        "card_bg_color": "#f8714726",
+        "text_color": "#F87147",
+        "button_bg_color": "#F87147",
+        "description": "Better Food for Everyone",
+        "price": 290.00
+      }
+    ]
+  
