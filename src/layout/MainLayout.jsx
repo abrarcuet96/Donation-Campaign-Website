@@ -5,7 +5,7 @@ const MainLayout = () => {
     return (
         <div className="relative">
             <div className="absolute w-full">
-                <div className="max-w-[1300px] mx-auto">
+                <div className="max-w-[1300px] mx-auto mt-5">
                     <NavBar></NavBar>
                 </div>
             </div>

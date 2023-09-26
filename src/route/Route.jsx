@@ -11,15 +11,16 @@ const myCreatedRoute= createBrowserRouter([
         children:[
             {
                 path: '/',
-                element: <HomePage></HomePage>
+                element: <HomePage></HomePage>,
+                loader: ()=> fetch('/data.json')
             },
             {
                 path: '/donation',
-                element: <DonationPage></DonationPage>
+                element: <DonationPage></DonationPage>,
             },
             {
                 path: '/statistics',
-                element: <StatisticsPage></StatisticsPage>
+                element: <StatisticsPage></StatisticsPage>,
             }
         ]
     }
