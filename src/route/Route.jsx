@@ -22,6 +22,7 @@ const myCreatedRoute= createBrowserRouter([
             {
                 path: '/statistics',
                 element: <StatisticsPage></StatisticsPage>,
+                loader: ()=> fetch('/data.json')
             },
             {
                 path: '/categories/:id',

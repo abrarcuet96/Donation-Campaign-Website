@@ -1,14 +1,18 @@
 import { useEffect, useState } from "react";
 import DonationAdded from "../../components/DonationAdded/DonationAdded";
+import StatisticsPage from "../StatisticsPage/StatisticsPage";
 
 const DonationPage = () => {
     const [donations, setDonations] = useState([]);
     const [notFound, setNotFound] = useState(false);
     const [isShow, setIsShow] = useState(false);
+    const [totalDonation, setTotalDonation]=useState(0);
     useEffect(() => {
         const donatedItems = JSON.parse(localStorage.getItem("donated"));
         if (donatedItems) {
             setDonations(donatedItems);
+            const total=donatedItems.reduce((preVal, currVal)=> preVal+currVal.price,0);
+            setTotalDonation(total);
         }
         else {
             setNotFound('No Donations');
