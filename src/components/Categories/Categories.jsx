@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Category from "../Category/Category";
 
 const Categories = ({categories}) => {
