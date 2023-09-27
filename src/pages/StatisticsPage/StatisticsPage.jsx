@@ -13,20 +13,17 @@ const StatisticsPage = () => {
     }, []);
     const categories = useLoaderData();
     const totalDonationItems = categories.length;
-    console.log(totalDonation);
-    console.log(totalDonationItems);
     const myDonation = (totalDonation / totalDonationItems) * 100;
-    const myDonationTwoDec = parseFloat(myDonation);
-    console.log(myDonationTwoDec);
-    const donationLeft = 100 - myDonationTwoDec;
+    const myDonationtFloat = parseFloat(myDonation);
+    const donationLeft = 100 - myDonationtFloat;
     const data = [
-        { value: myDonationTwoDec },
+        { value: myDonationtFloat },
         { value: donationLeft },
 
     ];
     const COLORS = ["#00C49F", "#FF444A"];
     const RADIAN = Math.PI / 180;
-    const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
+    const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
         const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
         const x = cx + radius * Math.cos(-midAngle * RADIAN);
         const y = cy + radius * Math.sin(-midAngle * RADIAN);

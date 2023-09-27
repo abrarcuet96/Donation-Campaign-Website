@@ -1,8 +1,6 @@
-import { useState } from "react";
-import Categories from "../Categories/Categories";
+import PropTypes from 'prop-types';
+const Banner = ({ handleChange, inputText, handleSearch }) => {
 
-const Banner = ({handleChange, inputText, handleSearch}) => {
-    
     const myStyle = {
         backgroundImage: 'url(https://i.ibb.co/tPz3tK9/Rectangle-4281.png?fbclid=IwAR1c7kE79FHqWgsj6y9piQ3nthcJUEnmOGfhumbGfw1zJAhY-zlund52zcE)',
         color: 'white'
@@ -25,8 +23,13 @@ const Banner = ({handleChange, inputText, handleSearch}) => {
                 </div>
             </div>
         </div>
-        
+
     );
 };
+Banner.propTypes = {
+    handleChange: PropTypes.func,
+    handleSearch: PropTypes.func,
+    inputText: PropTypes.string
+}
 
 export default Banner;

@@ -1,5 +1,4 @@
-
-import { ToastContainer, toast } from 'react-toastify';
+import PropTypes from 'prop-types';
 import swal from 'sweetalert';
 const CategoryDetailsPage = ({ category }) => {
     const { id, picture, button_bg_color, title, description, price } = category || {};
@@ -55,5 +54,7 @@ const CategoryDetailsPage = ({ category }) => {
         </div>
     );
 };
-
+CategoryDetailsPage.propTypes={
+    category: PropTypes.object
+}
 export default CategoryDetailsPage;

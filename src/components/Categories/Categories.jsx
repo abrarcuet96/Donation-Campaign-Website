@@ -1,4 +1,4 @@
-import { useState } from "react";
+import PropTypes from 'prop-types';
 import Category from "../Category/Category";
 
 const Categories = ({categories}) => {
@@ -10,5 +10,7 @@ const Categories = ({categories}) => {
         </div>
     );
 };
-
+Categories.propTypes={
+    categories: PropTypes.array
+}
 export default Categories;

@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../../components/Banner/Banner";
 import Categories from "../../components/Categories/Categories";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const HomePage = () => {
     const [inputText, setInputText] = useState("");

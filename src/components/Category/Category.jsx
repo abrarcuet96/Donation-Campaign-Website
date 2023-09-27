@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 
 const Category = ({ category }) => {
-    const { id, picture, category_name, category_bg_color, card_bg_color, text_color, button_bg_color, title } = category;
+    const { id, picture, category_name, category_bg_color, card_bg_color, text_color,title } = category;
     return (
         <Link to={`/categories/${id}`} state={id}>
         <div className="shadow-xl" style={{backgroundColor: `${card_bg_color}`}}>
@@ -14,5 +15,7 @@ const Category = ({ category }) => {
         </Link>
     );
 };
-
+Category.propTypes={
+    category: PropTypes.object
+}
 export default Category;

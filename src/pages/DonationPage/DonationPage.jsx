@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import DonationAdded from "../../components/DonationAdded/DonationAdded";
-import StatisticsPage from "../StatisticsPage/StatisticsPage";
 
 const DonationPage = () => {
     const [donations, setDonations] = useState([]);
