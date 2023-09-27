@@ -9,7 +9,6 @@ const CategoryDetails = () => {
     const categories = useLoaderData();
     useEffect(() => {
         const findCategory = categories?.find((category) => category.id == id);
-        console.log(findCategory);
         setCategory(findCategory);
     }, [id, categories]);
     return (

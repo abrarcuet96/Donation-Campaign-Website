@@ -6,7 +6,6 @@ const Banner = () => {
     }
     return (
         <div className="min-h-[80vh] " style={myStyle}>
-            {/* <div className="hero-overlay bg-white opacity-90"></div> */}
 
             <div className="bg-white bg-opacity-90">
 
