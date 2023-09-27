@@ -38,7 +38,7 @@ const StatisticsPage = () => {
         );
     };
     return (
-        <div className="h-[100vh] flex items-center justify-center">
+        <div className="h-[100vh] md:w-full flex items-start justify-center">
 
             <div>
                 <PieChart width={800} height={800}>

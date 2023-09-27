@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const DonationAdded = ({ category }) => {
     const { id, picture, category_name, category_bg_color, card_bg_color, text_color, button_bg_color, title, price } = category;
     return (
-        <div className="flex shadow-xl gap-5" style={{ backgroundColor: `${card_bg_color}` }}>
-            <div><img src={picture} alt="" /></div>
+        <div className="flex flex-col md:flex-row shadow-xl gap-5" style={{ backgroundColor: `${card_bg_color}` }}>
+            <div><img className='w-full' src={picture} alt="" /></div>
             <div className='flex items-center'>
                 <div>
                     <div className="w-fit rounded-sm py-1 px-2" style={{ backgroundColor: `${category_bg_color}` }}>

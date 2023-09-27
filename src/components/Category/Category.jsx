@@ -5,7 +5,7 @@ const Category = ({ category }) => {
     return (
         <Link to={`/categories/${id}`} state={id}>
         <div className="shadow-xl" style={{backgroundColor: `${card_bg_color}`}}>
-            <img src={picture} alt="" />
+            <img className="w-full" src={picture} alt="" />
             <div className="w-fit py-1 px-2 m-3 rounded-sm" style={{backgroundColor: `${category_bg_color}`}}>
                 <p className="font-semibold" style={{color: `${text_color}`}}>{category_name}</p>
             </div>

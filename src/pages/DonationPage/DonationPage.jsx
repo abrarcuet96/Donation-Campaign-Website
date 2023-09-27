@@ -33,7 +33,7 @@ const DonationPage = () => {
 
                         {
                             donations.length > 0 && (
-                                <div className="h-[30vh] flex items-center">
+                                <div className="md:h-[40vh] h-[40vh] flex items-end mb-4 ">
                                     <button
                                         onClick={handleRemove}
                                         className="text-white bg-red-600 btn px-5 bg-green-200 block mx-auto"
@@ -43,7 +43,7 @@ const DonationPage = () => {
                                 </div>
                             )
                         }
-                        <div className="max-w-[1300px] mx-auto grid grid-cols-2 rounded-lg gap-5">
+                        <div className="max-w-[1300px] mx-5 xl:mx-auto grid grid-cols-1 lg:grid-cols-2 rounded-lg gap-5">
                             {isShow ? donations.map((category) => (
                                 <DonationAdded key={category.id} category={category}></DonationAdded>
                             ))

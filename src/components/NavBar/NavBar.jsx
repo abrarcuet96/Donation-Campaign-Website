@@ -3,11 +3,11 @@ import Logo from "../Logo/Logo";
 
 const NavBar = () => {
     return (
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col md:flex-row items-center justify-between">
                 <Logo></Logo>
-                <div>
+                <div className="mt-2">
                     <nav>
-                        <ul className="flex gap-5">
+                        <ul className="flex gap-5 ">
                             <li>
                                 <NavLink
                                     to="/"

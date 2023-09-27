@@ -14,7 +14,7 @@ const Banner = ({handleChange, inputText, handleSearch}) => {
 
                 <div className="min-h-[80vh] flex items-center justify-center">
                     <div className="flex flex-col items-center">
-                        <p className="mb-5 text-4xl text-black font-bold">I Grow By Helping People In Need</p>
+                        <p className="mb-5 text-xl md:text-4xl text-black font-bold">I Grow By Helping People In Need</p>
                         <div className="flex items-center">
                             <input type="text" onChange={handleChange} value={inputText} placeholder="Search here…" className="w-[300px] p-3 rounded-l-lg text-black" />
                             <button onClick={handleSearch} className="p-3 rounded-r-lg bg-[#FF444A] text-white">

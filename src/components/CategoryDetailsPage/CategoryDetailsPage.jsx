@@ -27,13 +27,13 @@ const CategoryDetailsPage = ({ category }) => {
 
     return (
         <div className="flex flex-col">
-            <div className="flex justify-center h-[70vh] ">
+            <div className="flex justify-center h-[70vh] mx-5">
                 <div className="mt-40">
                     <div className="relative">
                         <img className="w-[600px] rounded-lg" src={picture} alt="" />
-                        <div className="absolute top-[310px]">
+                        <div className="absolute top-[170px] md:top-[310px]">
                             <div className="relative">
-                                <div className="p-2 rounded-lg w-[600px] bg-black bg-opacity-60">
+                                <div className="p-2 rounded-lg w-[385px] md:w-[600px] bg-black bg-opacity-60">
 
                                     <button
                                         onClick={handleDonationDetails}
@@ -46,9 +46,11 @@ const CategoryDetailsPage = ({ category }) => {
 
                 </div>
             </div>
-            <div className="h-[30vh] max-w-[1300px] mx-auto mt-20">
-                <h1 className="text-2xl font-bold my-5">{title}</h1>
-                <p>{description}</p>
+            <div className="h-[50vh] max-w-[1300px] xl:mx-auto mx-5 md:mt-40">
+                <div>
+                    <h1 className="text-2xl font-bold my-5">{title}</h1>
+                    <p>{description}</p>
+                </div>
             </div>
         </div>
     );
