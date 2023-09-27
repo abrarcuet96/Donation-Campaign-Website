@@ -14,10 +14,10 @@ const StatisticsPage = () => {
     const categories = useLoaderData();
     const totalDonationItems = categories.length;
     const myDonation = (totalDonation / totalDonationItems) * 100;
-    const myDonationtFloat = parseFloat(myDonation);
-    const donationLeft = 100 - myDonationtFloat;
+    const myDonationFloat = parseFloat(myDonation);
+    const donationLeft = 100 - myDonationFloat;
     const data = [
-        { value: myDonationtFloat },
+        { value: myDonationFloat },
         { value: donationLeft },
 
     ];
@@ -35,29 +35,42 @@ const StatisticsPage = () => {
         );
     };
     return (
-        <div className="h-[100vh] md:w-full flex items-start justify-center">
+        <div className="flex items-start justify-center">
 
-            <div>
-                <PieChart width={800} height={800}>
-                    <Pie
-                        dataKey="value"
-                        isAnimationActive={false}
-                        data={data}
-                        cx="50%"
-                        cy="50%"
-                        outerRadius={200}
-                        fill="#8884d8"
-                        label={renderCustomizedLabel}
-                        labelLine={false}
-                    >
-                        {data.map((entry, index) => (
-                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                        ))}
-                    </Pie>
-                    <Tooltip />
-                </PieChart>
+            <div className="flex flex-col items-center">
+                <div>
+                    <PieChart width={800} height={600}>
+                        <Pie
+                            dataKey="value"
+                            isAnimationActive={false}
+                            data={data}
+                            cx="50%"
+                            cy="50%"
+                            outerRadius={200}
+                            fill="#8884d8"
+                            label={renderCustomizedLabel}
+                            labelLine={false}
+                        >
+                            {data.map((entry, index) => (
+                                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                            ))}
+                        </Pie>
+                        <Tooltip />
+                    </PieChart>
+                </div>
+                <div className="flex gap-5 border-2">
+                    <div className="flex items-center gap-2">
+                        <p>Your Donation</p>
+                        <div className="w-[100px] h-[20px] bg-[#00C49F]"></div>
+
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <p>Total Donation</p>
+                        <div className="w-[100px] h-[20px] bg-[#FF444A]">></div>
+
+                    </div>
+                </div>
             </div>
-
         </div>
 
     );
